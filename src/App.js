@@ -48,7 +48,7 @@ function App() {
             </a>{" "}
             found{" "}
             <a
-              href="https://github.com/bill-lliu"
+              href="https://github.com/bill-lliu/spacestagram"
               title="GitHub Link"
               style={{ color: "white" }}
             >
