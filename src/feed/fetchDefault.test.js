@@ -1,5 +1,5 @@
-// import fetchDefault from "./fetchDefault";
-const fetchDefault = require("./fetchDefault");
+import fetchDefault from "./fetchDefault";
+// const fetchDefault = require("./fetchDefault");
 
 describe("fetchDefault", () => {
   it("should fetch APOD data for the past week as an array", async () => {
@@ -11,9 +11,3 @@ describe("fetchDefault", () => {
     expect(fetchData[0] && typeof fetchData[0] === "object").toBe(true);
   });
 });
-
-// describe("fetchDay", () => {
-//   it("should fetch APOD data for specified day", () => {
-//     expect(fetchDay).toMatch([{ day: "day" }]);
-//   });
-// });

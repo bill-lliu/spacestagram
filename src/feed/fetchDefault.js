@@ -1,4 +1,4 @@
-const fetchDefault = async () => {
+export default async function fetchDefault() {
   // calculate date 1 week ago from today - method should work while crossing months and years
   const currentDate = new Date();
   const oneWeekAgo = new Date(currentDate.setDate(currentDate.getDate() - 7));
@@ -17,7 +17,7 @@ const fetchDefault = async () => {
     });
 
   return data;
-};
+}
 
-module.exports = fetchDefault;
-export default fetchDefault();
+// module.exports = fetchDefault;
+// export default fetchDefault();

@@ -1,4 +1,5 @@
-const fetchDay = require("./fetchDay");
+import fetchDay from "./fetchDay";
+// const fetchDay = require("./fetchDay");
 
 const mockDay = {
   copyright: "Michael Abramyan",

@@ -11,7 +11,7 @@ const Feed = () => {
       date: "please allow up to 30 seconds for posts to load",
     },
   ]);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   // const [searchValue, setSearchValue] = useState("");
 
   // TODO: Change Feed to fetch more when user reaches bottom of page
@@ -19,7 +19,7 @@ const Feed = () => {
     const fetchDefaultData = async () => {
       const data = await fetchDefault();
       setData(data);
-      setIsLoading(false);
+      // setIsLoading(false);
     };
     // console.log("fetching...");
     fetchDefaultData();
@@ -30,7 +30,7 @@ const Feed = () => {
     const fetchDayData = async () => {
       const data = [await fetchDay(searchText)]; // put into array to mirror multi-day format
       setData(data);
-      setIsLoading(false);
+      // setIsLoading(false);
     };
     // console.log("fetching...");
     fetchDayData();
@@ -58,13 +58,11 @@ const Feed = () => {
       <button className="Polaris-Button" onClick={searchForDay}>
         <b>Search</b>
       </button>
-      {dataCheck.map((cardData) => {
-        return (
-          <div key={cardData.title}>
-            <Card cardData={cardData} />
-          </div>
-        );
-      })}
+      {dataCheck.map((cardData) => (
+        <div key={cardData.title}>
+          <Card cardData={cardData} />
+        </div>
+      ))}
     </div>
   );
 };
