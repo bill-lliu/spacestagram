@@ -12,3 +12,4 @@ const fetchDay = async (inputDate) => {
 };
 
 module.exports = fetchDay;
+export default fetchDay();

@@ -15,12 +15,12 @@ If you would like to run a local version of the app, simply:
 
 ### The Basics
 
-- App fetches data from NASA's Astronomy Photo of the Day (APOD) API 
+- App fetches data from NASA's Astronomy Photo of the Day (APOD) API
 - Displays post info
-    - Displays photo
-    - Displays title
-    - Displays date
-    - Displays description
+  - Displays photo
+  - Displays title
+  - Displays date
+  - Displays description
 - Ability to "like" a photo
 - Ability to "unlike" a photo
 
@@ -29,6 +29,11 @@ If you would like to run a local version of the app, simply:
 ### Session Saving
 
 - "Liked" photos will persist through reloads until user "unlikes" them (or until browser cache & cookies are cleared)
+
+### Search Support
+
+- Users may choose to view post from a specific day using searchbar and "Search" button
+- Users may return to viewing this week's most recent posts using the "Home" button
 
 ### Chronological Ordering
 
@@ -64,6 +69,7 @@ If you would like to run a local version of the app, simply:
 
 - App is deployed via Netlify
 - New app builds must complete without error in order to be deployed to production
+- Jest unit tests written for each query
 
 ### Mobile Compatibility
 

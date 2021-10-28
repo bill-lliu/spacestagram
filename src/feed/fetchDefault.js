@@ -19,5 +19,5 @@ const fetchDefault = async () => {
   return data;
 };
 
-// export default fetchDefault();
 module.exports = fetchDefault;
+export default fetchDefault();
