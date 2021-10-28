@@ -1,4 +1,3 @@
-import { Button } from "@shopify/polaris";
 import { useState } from "react";
 import "./Card.css";
 
@@ -43,9 +42,9 @@ const Card = ({ cardData }) => {
       {cardData.explanation && (
         <div className="card-footer">
           {isLiked ? "❤️" : "🤍"}
-          <Button className="Polaris-Button" onClick={updateClick}>
+          <button className="Polaris-Button" onClick={updateClick}>
             {isLiked ? <b>Unlike</b> : <b>Like!</b>}
-          </Button>
+          </button>
           <button className="Polaris-Button" onClick={copyToClipboard}>
             <b>Share!</b>
           </button>
