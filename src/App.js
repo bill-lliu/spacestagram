@@ -16,20 +16,16 @@ function App() {
             title="NASA's Astronomy Picture of the Day"
             style={{ color: "white" }}
           >
-            Astronomy Picture of the Day
+            Astronomy Picture of the Day!
           </a>
-          !
+          <br />
+          Scroll Down to see the most recent posts, or search for a specific
+          day:
         </p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"s
-          rel="noopener noreferrer"
-          >
-          Learn React
-        </a> */}
       </header>
-      <Feed />
+      <div>
+        <Feed />
+      </div>
       <footer className="App-footer">
         <div>
           <a href="." style={{ color: "white" }}>

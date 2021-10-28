@@ -43,17 +43,30 @@ const Feed = () => {
       date: "please allow up to 30 seconds for posts to load",
     },
   ];
-  //   console.log("dataCheck:");
-  //   console.log(dataCheck);
 
-  // maps each post as a Card component
-  return dataCheck.map((cardData) => {
-    return (
-      <div key={cardData.title}>
-        <Card cardData={cardData} />
-      </div>
-    );
-  });
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
+  // maps all posts as a Card component
+  return (
+    <div>
+      <button className="Polaris-Button" onClick={refreshPage}>
+        <b>Home</b>
+      </button>
+      <input type="text" id="searchBar" placeholder="yyyy-mm-dd" />
+      <button className="Polaris-Button" onClick={searchForDay}>
+        <b>Search</b>
+      </button>
+      {dataCheck.map((cardData) => {
+        return (
+          <div key={cardData.title}>
+            <Card cardData={cardData} />
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default Feed;
