@@ -42,7 +42,7 @@ If you would like to run a local version of the app, simply:
 
 ### Video Support
 
-- The app supports the playback of embedded videos
+- The app supports the playback of embedded videos (ex. 2022-12-04)
 
 ### Animations
 
