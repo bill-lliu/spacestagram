@@ -9,10 +9,6 @@ If you would like to run a local version of the app, simply:
 - run `yarn start` to run the app locally, and
 - you can see your local app at `http://localhost:3000/`
 
-## Features of Spacestagram
-
-[Project Challenge Details](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
-
 ### The Basics
 
 - App fetches data from NASA's Astronomy Photo of the Day (APOD) API
